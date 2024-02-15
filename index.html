@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Viewer</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="content">
+
+        <h1>
+            Bird, Plane, or Satellite?
+        </h1>
+        
+        <div class="section">
+            <div class="row">
+                <h2>
+                    When will a Satellite Pass?
+                </h2>
+            </div>
+            <div class="row">
+                <label>Location</label>
+                <input id="location" />
+            </div>
+            <div class="row">
+                <label>NORAD Satellite Code</label>
+                <input id="norad" />
+            </div>
+            <div class="row">
+                <button id="search">
+                    Search
+                </button>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="row">
+                <h2>
+                    NORAD Satellite Code List:
+                </h2>
+            </div>
+            <div class="row">
+                <div class="title">
+                    <b>Name</b>
+                </div>
+                <div class="title">
+                    <b>NORAD (Satellite ID)</b>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    Int. Space Station
+                </div>
+                <div class="item">
+                    25544
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    Hubble Space Telescope
+                </div>
+                <div class="item">
+                    20580
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    SpaceX Dragon
+                </div>
+                <div class="item">
+                    46920
+                </div>
+            </div>
+            <div class="row">
+                <b>Find more of the brightest satellites' NORAD IDs&nbsp;<a href="https://www.n2yo.com/satellites/?c=1">here</a>.</b>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="apiKey.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
