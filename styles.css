@@ -1,13 +1,14 @@
 * {
     font-family: sans-serif;
-    color: black;
+    color: whitesmoke;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: lightgray;
+    background-color: black;
 }
+
 
 
 h2 {
@@ -22,7 +23,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: gray;
+    background-color: transparent;
     padding: 0 24px;
 }
 
@@ -30,7 +31,7 @@ h2 {
     border-radius: 3px;
     width: fit-content;
     margin-bottom: 24px;
-    background-color: wheat;
+    background-color: rgb(0, 41, 78);   
 }
 
 .row {
@@ -55,6 +56,7 @@ input {
     font-size: 14px;
     height: 24px;
     background-color: lightgray;
+    color:rgb(0, 41, 78);
     outline: none;
     border: none;
     padding: 3px 6px;
@@ -76,3 +78,90 @@ button {
 button:hover {
     box-shadow: 0 0 20px #caf0f8;
 }
+
+/* .universe {
+    border-radius: 50%;
+} */
+
+.moon{
+    background-image: url('images/moon');
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 30s linear infinite 3s;
+    animation-timing-function: ease-in;
+}
+
+.moving-satellite{
+    /* background-image: url('images/satellite');
+    background-position: center; */
+    margin-top: 5px;
+    width: 15px;
+    height: 25px;
+    border-radius: 40%;
+    background-color: rgb(64, 64, 64);
+    position: relative;
+    animation: rotation 20s linear infinite 2s;
+    animation-timing-function: ease-in;
+}
+
+.earth {
+    background-image: url('images/earth3');
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: earth 30s linear 0s infinite;
+}
+
+
+@keyframes rotate {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 150px;
+        top: 0;
+    }
+    50% {
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+@keyframes rotation {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 150px;
+        top: 0;
+    }
+    50% {
+        left: 150px;
+        top: 150px;
+    }
+    75% {
+        left: 0px;
+        top: 150px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes earth {
+    0% { background-position:0 0 }
+    100% { background-position:355px 0 }
+  }

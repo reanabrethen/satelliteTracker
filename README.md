@@ -71,7 +71,7 @@ Lets make it so that when the user clicks 'Search', we make an API request to th
 
 When you make the request, customize the URL so that the the address reflects the value in the address text input.
 
-**Important note:** Browsers expect the values in the API request to be "URL encoded". This means that special characters in the address like spaces should be replaced with valid characters than can go in a URL. To URL encode any string in Javascript, simply use the built in [`encodeURI()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI) function.
+**Important note:** Browsers expect the values in the API request to be "URL encoded". This means that special characters in the address like spaces should be replaced with valid characters that can go in a URL. To URL encode any string in Javascript, simply use the built in [`encodeURI()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI) function.
 
 Upon receiving a response from the geocoding API, extract the longitude and latitude from the response JSON (hint: look for abbreviated keys for the coordinates) and console.log them both out.
 
